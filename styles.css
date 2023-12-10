@@ -13,6 +13,17 @@ body{
     font-family: monospace;
 }
 
+::-webkit-scrollbar{
+    width: 16px;
+}
+::-webkit-scrollbar-thumb{  
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color:#412653;
+}
+
 .top-nav{
     /* border:solid white 2px; */
     padding: 25px;
@@ -43,19 +54,52 @@ body{
     text-align: center;
     cursor: default;
 }
-.container{
+.panel-container{
     border: solid 2px white;
     height: 65vh;
+    width: auto;
     padding: 15px;
     display: flex;
     justify-content: center;
 }
-.container .projects{
+.panel-container .projects{
     border: solid 2px white;
     text-align: center;
     padding: 15px;
-    width: 100em;
+    width: 100vh;
     flex: 1;
     margin: 5px;
-    cursor:crosshair;
+    cursor: pointer;
+}
+
+.resume-container {
+    border: solid 2px white;
+    padding: 15px;
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.cs-container{
+    border: solid 2px white;
+    padding: 15px;
+    height: 60vh;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.music-container{
+    border: solid 2px white;
+    padding: 15px;
+    height: 60vh;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.editing-container{
+    border: solid 2px white;
+    padding: 15px;
+    height: 60vh;
+    width: auto;
+    margin-bottom: 20px;
 }

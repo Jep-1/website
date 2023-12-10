@@ -3,26 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Jep-1 | Home</title>
 </head>
 <body>
     <main>
-        <div class="top-nav">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="https://github.com/Jep-1" target="_blank">GitHub</a>
-        </div>
-        <div class="header">
-            <div class="welcome">
-                <h1>Hello, I'm Jep.</h1>
-                <h2>Welcome to my portfolio.</h2>
+        <div class="content">
+            <div class="top-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="https://github.com/Jep-1" target="_blank">GitHub</a>
             </div>
-        </div>
-        <div class="container">
-            <div class="projects" id="p1">Software Development</div>
-            <div class="projects" id="p2">Music Production</div>
-            <div class="projects" id="p3">Video Editing</div>
+            <div class="header">
+                <div class="welcome">
+                    <h1>Hello, I'm Jep.</h1>
+                    <h2>Welcome to my portfolio.</h2>
+                </div>
+            </div>
+            <div class="panel-container">
+                <div class="projects" id="p1" onclick="goToContainer('cs-container')">Computer Science</div>
+                <div class="projects" id="p2" onclick="goToContainer('music-container')">Music Production</div>
+                <div class="projects" id="p3" onclick="goToContainer('editing-container')">Video Editing</div>
+            </div>
+            <br>
+            <div class="resume-container">
+                <h1 id="resume">Resume</h1>
+                <br>
+                <div class="resume-mu">
+                    <h1>University of Missouri</h1>
+                    <h2>Computer Science Major</h2>
+                    <h3>January 2023 - Present</h3>
+                    <ul>
+                        <li>Studied hard</li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="resume-fike">
+                    <h1>Fike</h1>
+                    <h2>Product Compliance Electronics Technician</h2>
+                    <h3>April 2022 - January 2023</h3>
+                    <ul>
+                        <li>Performed troubleshooting of prototype circuit designs and firmware/software operation.</li>
+                        <li>Assembled prototype products utilizing Surface Mount Technology and Through Hole Technology as well as test apparatuses in a<br> 
+                        timely and quality manner while under the guidance of engineers.</li>
+                        <li>Monitored ongoing testing for results as defined by engineering staff.</li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="resume-navy">
+                    <h1>U.S. Navy</h1>
+                    <h2>Electronics Technician</h2>
+                    <h3>August 2019 - March 2022</h3>
+                    <ul>
+                        <li>Inspection of electrical equipment on board and performing professional diagnoses of issues using professional troubleshooting tactics expertly taught in training and shipboard experience</li>
+                        <li>Utilization of schematics and technical manuals to accurately diagnose and locate problems.</li>
+                        <li>Repair, adjust or replace electrical equipment and components to correct issues and resolve issues.</li>
+                        <li>Interact with personnel to gather information about issues and accurately provide assistance to resolve issues expeditiously.</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+            <div class="cs-container" id="cs-container">CS</div>
+            <div class="music-container" id="music-container">Music</div>
+            <div class="editing-container" id="editing-container">Editing</div>
         </div>
     </main>
 </body>
